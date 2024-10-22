@@ -18,6 +18,8 @@ func main() {
 	fmt.Println("Server is starting...")
 
 	http.HandleFunc("/upload", Upload.Upload)
+	http.HandleFunc("/get_all", Upload.Get_all)
+	http.HandleFunc("/get_video", Upload.Get_upload)
 	
 
 	
